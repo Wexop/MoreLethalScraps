@@ -1,0 +1,1 @@
+Add common lethal company monsters or anything in the game as scraps items (Be carefulf it can be noisy!)
