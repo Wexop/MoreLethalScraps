@@ -14,7 +14,7 @@ using LethalLib.Modules;
 
         const string GUID = "wexop.moreLethalScraps";
         const string NAME = "MoreLethalScraps";
-        const string VERSION = "1.0.0";
+        const string VERSION = "1.0.2";
 
         public static Plugin instance;
 
