@@ -4,8 +4,8 @@
     "website_url": "https://github.com/Wexop/MoreLethalScraps",
     "description": "Add common lethal company monsters or anything in the game as scraps items (Be carefulf it can be noisy!)",
     "dependencies": [
-        "BepInEx-BepInExPack-5.4.2100",
-	"Evaisa-HookGenPatcher-0.0.5",
-	"Evaisa-LethalLib-0.15.2"
+      "BepInEx-BepInExPack-5.4.2100",
+	  "Evaisa-HookGenPatcher-0.0.5",
+	  "Evaisa-LethalLib-0.15.2"
     ]
 }
