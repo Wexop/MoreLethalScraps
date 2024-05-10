@@ -33,9 +33,10 @@ using LethalLib.Modules;
             Item dog = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/DogScrap.asset");
             NetworkPrefabs.RegisterNetworkPrefab(dog.spawnPrefab);
             Utilities.FixMixerGroups(dog.spawnPrefab);
-            Items.RegisterScrap(dog, 75, Levels.LevelTypes.All);
+
             Items.RegisterScrap(dog, 100, Levels.LevelTypes.AssuranceLevel);
             Items.RegisterScrap(dog, 100, Levels.LevelTypes.OffenseLevel);
+            Items.RegisterScrap(dog, 75, Levels.LevelTypes.All);
 
             Logger.LogInfo($"MoreLethalScraps - DogToy ready !");
             
@@ -43,9 +44,10 @@ using LethalLib.Modules;
             Item brakken = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/BrakkenScrap.asset");
             NetworkPrefabs.RegisterNetworkPrefab(brakken.spawnPrefab);
             Utilities.FixMixerGroups(brakken.spawnPrefab);
-            Items.RegisterScrap(brakken, 50, Levels.LevelTypes.All);
+
             Items.RegisterScrap(brakken, 80, Levels.LevelTypes.MarchLevel);
             Items.RegisterScrap(brakken, 80, Levels.LevelTypes.VowLevel);
+            Items.RegisterScrap(brakken, 50, Levels.LevelTypes.All);
             
             Logger.LogInfo($"MoreLethalScraps - BrakkenToy ready !");
             
@@ -69,10 +71,11 @@ using LethalLib.Modules;
             Item nutCracker = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/NutCrackerScrap.asset");
             NetworkPrefabs.RegisterNetworkPrefab(nutCracker.spawnPrefab);
             Utilities.FixMixerGroups(nutCracker.spawnPrefab);
-            Items.RegisterScrap(nutCracker, 30, Levels.LevelTypes.All);
+
             Items.RegisterScrap(nutCracker, 75, Levels.LevelTypes.RendLevel);
             Items.RegisterScrap(nutCracker, 75, Levels.LevelTypes.DineLevel);
             Items.RegisterScrap(nutCracker, 75, Levels.LevelTypes.TitanLevel);
+            Items.RegisterScrap(nutCracker, 30, Levels.LevelTypes.All);
             
             Logger.LogInfo($"MoreLethalScraps - NutCrackerToy ready !");
             
@@ -80,10 +83,11 @@ using LethalLib.Modules;
             Item giant = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/GiantScrap.asset");
             NetworkPrefabs.RegisterNetworkPrefab(giant.spawnPrefab);
             Utilities.FixMixerGroups(giant.spawnPrefab);
-            Items.RegisterScrap(giant, 50, Levels.LevelTypes.All);
+
             Items.RegisterScrap(giant, 80, Levels.LevelTypes.VowLevel);
             Items.RegisterScrap(giant, 80, Levels.LevelTypes.MarchLevel);
             Items.RegisterScrap(giant, 80, Levels.LevelTypes.None, new []{"Adamance"});
+            Items.RegisterScrap(giant, 50, Levels.LevelTypes.All);
             
             Logger.LogInfo($"MoreLethalScraps - GiantToy ready !");
             
@@ -91,11 +95,12 @@ using LethalLib.Modules;
             Item oldBird = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/OldBirdScrap.asset");
             NetworkPrefabs.RegisterNetworkPrefab(oldBird.spawnPrefab);
             Utilities.FixMixerGroups(oldBird.spawnPrefab);
-            Items.RegisterScrap(oldBird, 20, Levels.LevelTypes.All);
+
             Items.RegisterScrap(oldBird, 50, Levels.LevelTypes.RendLevel);
             Items.RegisterScrap(oldBird, 50, Levels.LevelTypes.DineLevel);
             Items.RegisterScrap(oldBird, 65, Levels.LevelTypes.TitanLevel);
             Items.RegisterScrap(oldBird, 100, Levels.LevelTypes.None, new []{"Embrion"});
+            Items.RegisterScrap(oldBird, 20, Levels.LevelTypes.All);
             
             Logger.LogInfo($"MoreLethalScraps - OldBirdToy ready !");
             
