@@ -1,8 +1,8 @@
-Add common lethal company monsters or anything in the game as scraps items (Be carefulf it can be noisy!)
+Add common lethal company monsters or anything in the game as scraps items (Be careful it can be noisy!)
 
 Every spawn rate can be configured with LethalConfig !
 
-Current item in v1.0.3:
+Current scraps items:
 
 - DogToy
 - BrackenToy
@@ -12,3 +12,6 @@ Current item in v1.0.3:
 - BlobToy
 - FireExitToy
 - GoldenFireExitToy
+- JesterToy
+- CoilHeadToy
+- BugToy

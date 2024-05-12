@@ -19,7 +19,7 @@ namespace MoreLethalScraps
 
         const string GUID = "wexop.moreLethalScraps";
         const string NAME = "MoreLethalScraps";
-        const string VERSION = "1.0.3";
+        const string VERSION = "1.1.0";
 
         public static Plugin instance;
 
@@ -42,7 +42,7 @@ namespace MoreLethalScraps
             NetworkPrefabs.RegisterNetworkPrefab(dog.spawnPrefab);
             Utilities.FixMixerGroups(dog.spawnPrefab);
             
-            var dogAllEntry = Config.Bind("ScrapsRarity", "DogToy All moons", 75, scrapRarityDesc);
+            var dogAllEntry = Config.Bind("ScrapsRarity", "DogToy All moons", 65, scrapRarityDesc);
             CreateSliderScrap(dogAllEntry);
             var dogSpecialMoonsEntry = Config.Bind("ScrapsRarity", "DogToy Assurance and Offense moons", 100, scrapRarityDesc);
             CreateSliderScrap(dogSpecialMoonsEntry);
@@ -115,7 +115,7 @@ namespace MoreLethalScraps
             NetworkPrefabs.RegisterNetworkPrefab(giant.spawnPrefab);
             Utilities.FixMixerGroups(giant.spawnPrefab);
             
-            var giantAllEntry = Config.Bind("ScrapsRarity", "GiantToy All moons", 30, scrapRarityDesc);
+            var giantAllEntry = Config.Bind("ScrapsRarity", "GiantToy All moons", 40, scrapRarityDesc);
             CreateSliderScrap(giantAllEntry);
             var giantSpecialMoonsEntry = Config.Bind("ScrapsRarity", "GiantToy March, Vow and Adamance moons", 80, scrapRarityDesc);
             CreateSliderScrap(giantSpecialMoonsEntry);
@@ -132,7 +132,7 @@ namespace MoreLethalScraps
             NetworkPrefabs.RegisterNetworkPrefab(oldBird.spawnPrefab);
             Utilities.FixMixerGroups(oldBird.spawnPrefab);
             
-            var oldBirdAllEntry = Config.Bind("ScrapsRarity", "OldBirdToy All moons", 20, scrapRarityDesc);
+            var oldBirdAllEntry = Config.Bind("ScrapsRarity", "OldBirdToy All moons", 25, scrapRarityDesc);
             CreateSliderScrap(oldBirdAllEntry);
             var oldBirdSpecialMoonsEntry = Config.Bind("ScrapsRarity", "OldBirdToy Rend, Dine and Titan moons", 50, scrapRarityDesc);
             CreateSliderScrap(oldBirdSpecialMoonsEntry);
@@ -158,6 +158,55 @@ namespace MoreLethalScraps
             Items.RegisterScrap(blob, blobAllEntry.Value, Levels.LevelTypes.All);
             
             Logger.LogInfo($"MoreLethalScraps - BlobToy ready !");
+            
+            //BugToy
+            Item bug = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/BugScrap.asset");
+            NetworkPrefabs.RegisterNetworkPrefab(bug.spawnPrefab);
+            Utilities.FixMixerGroups(bug.spawnPrefab);
+            
+            var bugAllEntry = Config.Bind("ScrapsRarity", "BugToy All moons", 75, scrapRarityDesc);
+            CreateSliderScrap(bugAllEntry);
+            
+            Items.RegisterScrap(bug, bugAllEntry.Value, Levels.LevelTypes.All);
+            
+            Logger.LogInfo($"MoreLethalScraps - BugToy ready !");
+            
+            //CoilHead
+            Item coilHead = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/CoilHeadScrap.asset");
+            NetworkPrefabs.RegisterNetworkPrefab(coilHead.spawnPrefab);
+            Utilities.FixMixerGroups(coilHead.spawnPrefab);
+            
+            var coilAllEntry = Config.Bind("ScrapsRarity", "CoilHeadToy All moons", 22, scrapRarityDesc);
+            CreateSliderScrap(coilAllEntry);
+            
+            var coilSpecialMoonsEntry = Config.Bind("ScrapsRarity", "CoilHeadToy Rend, Dine and Titan moons", 65, scrapRarityDesc);
+            CreateSliderScrap(coilSpecialMoonsEntry);
+            
+            Items.RegisterScrap(coilHead, coilSpecialMoonsEntry.Value, Levels.LevelTypes.TitanLevel);
+            Items.RegisterScrap(coilHead, coilSpecialMoonsEntry.Value, Levels.LevelTypes.DineLevel);
+            Items.RegisterScrap(coilHead, coilSpecialMoonsEntry.Value, Levels.LevelTypes.RendLevel);
+            Items.RegisterScrap(coilHead, coilAllEntry.Value, Levels.LevelTypes.All);
+            
+            Logger.LogInfo($"MoreLethalScraps - CoilHeadToy ready !");
+            
+                        
+            //JesterToy
+            Item jester = bundle.LoadAsset<Item>("Assets/LethalCompany/Mods/MoreLethalScraps/JesterScrap.asset");
+            NetworkPrefabs.RegisterNetworkPrefab(jester.spawnPrefab);
+            Utilities.FixMixerGroups(jester.spawnPrefab);
+            
+            var jesterAllEntry = Config.Bind("ScrapsRarity", "JesterToy All moons", 20, scrapRarityDesc);
+            CreateSliderScrap(jesterAllEntry);
+            
+            var jesterSpecialMoonsEntry = Config.Bind("ScrapsRarity", "JesterToy Rend, Dine and Titan moons", 50, scrapRarityDesc);
+            CreateSliderScrap(jesterSpecialMoonsEntry);
+            
+            Items.RegisterScrap(jester, jesterSpecialMoonsEntry.Value, Levels.LevelTypes.TitanLevel);
+            Items.RegisterScrap(jester, jesterSpecialMoonsEntry.Value, Levels.LevelTypes.DineLevel);
+            Items.RegisterScrap(jester, jesterSpecialMoonsEntry.Value, Levels.LevelTypes.RendLevel);
+            Items.RegisterScrap(jester, jesterAllEntry.Value, Levels.LevelTypes.All);
+            
+            Logger.LogInfo($"MoreLethalScraps - JesterToy ready !");
 
 
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), GUID);
