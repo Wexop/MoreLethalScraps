@@ -15,3 +15,4 @@ Current scraps items:
 - JesterToy
 - CoilHeadToy
 - BugToy
+- LittleGirlToy

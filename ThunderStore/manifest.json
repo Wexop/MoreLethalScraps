@@ -1,6 +1,6 @@
 {
     "name": "MoreLethalScraps",
-    "version_number": "1.1.0",
+    "version_number": "1.1.1",
     "website_url": "https://github.com/Wexop/MoreLethalScraps",
     "description": "[V50] Add common lethal company monsters or anything in the game as scraps items (Be careful it can be noisy!). Every spawn rate can be configured with LethalConfig !",
     "dependencies": [
